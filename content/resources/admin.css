@@ -1,0 +1,145 @@
+#wrapper .title {
+	height:40px;
+	clear:both;
+	line-height:40px;
+	margin-bottom:20px;
+}
+.title h3{
+	color:#003d00;
+	float:left;
+	margin:0;
+}
+.box-title {
+	height:20px;
+	line-height:20px;
+}
+.box_content a {
+	margin-left:5px;
+	margin-top:5px;
+}/*
+.button_top {
+	margin-left:300px;
+	margin-top:10px;
+	height:30px;
+	line-height:30px;
+	cursor:pointer;
+	color:#fff;
+	float:left;
+	padding:0 10px;
+	text-align: center;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: #75a922;
+	behavior: url(PIE.htc);
+}*/
+
+.content_pagination{
+	width:100%;
+	padding-top:15px;
+	border:1px solid #ccc;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: #e6e6e6;
+	behavior: url(PIE.htc);	
+}
+#menu-title {
+	float:left;		
+	margin-bottom:20px;
+}
+#menu-title input {
+	float:left;
+	margin-left:10px;
+	height:25px;
+	width:300px;
+	border:1px solid #ccc;
+}
+#menu-title a{
+	float:right;
+	margin-right:10px;
+}
+#please-wait{float:left;width:43px;height:11px;background-image:url(spinner.gif);visibility:hidden;margin:10px 0 0 300px;}
+#add-new-root{display: block;width: 140px;float: right;}
+.button_content {
+	padding:0 15px;
+	height:30px;
+	text-align:center;
+	cursor:pointer;
+	color:#fff;
+	line-height:30px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background: #599659;
+	behavior: url(PIE.htc);	
+	border: 0
+}
+.box_content {
+	float:left;
+	padding-top:20px;
+	padding-left:10px;
+	clear:both;
+	width:790px;
+	background:#f3f3f3;
+}
+.menu-icon{
+height: 20px;
+display: inline-block;
+margin: 0 5px;
+}
+.menu-icon img{vertical-align:middle}
+.toolbox_content {
+	clear:both;
+	margin-bottom:20px;
+}
+.toolbox_content a {
+	margin-right:20px;
+	font-size:12px;
+}
+.clr {
+	clear:both;
+}
+.box_content ul {
+	float:left;
+	list-style:none;
+	padding-left:10px;
+}
+.box_content input {
+	padding-left:5px;
+	height:22px;
+	border:1px solid #ccc;
+}
+.box_content ul li {
+	margin-bottom:10px;
+}
+.box_second {
+	float:right;	
+}
+.box_second select{
+	margin-right:20px;
+	padding:3px;
+	border:1px solid #ccc;
+}
+.box_second input {
+	margin-right:20px;	
+}
+.box_firt {
+	float:left;	
+	height:30px;
+	line-height:30px;
+}
+.box_firt input{
+	float:left;	
+}
+.content_content {
+	width:100%;
+	float:left;	
+}
+.content_title{
+	width:100%;
+	float:left;	
+}
+.linkto {
+	float:left;
+}

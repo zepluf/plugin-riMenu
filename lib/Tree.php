@@ -84,7 +84,7 @@ class Tree {
 		return $this->menu_tree[$menus_id];	
 	}
 	
-	function getMenusTree(){
+	function getTree(){
 		return $this->menu_tree;
 	}	
 

@@ -25,7 +25,14 @@
    			</php>
    		</required>
    		<plugins> 
-   	   				   		
+            <plugin>
+                 <codename>riProduct</codename>
+                 <min>1.0</min>
+            </plugin>
+            <plugin>
+               <codename>riCategory</codename>
+               <min>1.0</min>
+            </plugin>
    		</plugins>
 	</dependencies>
 	<changelog>

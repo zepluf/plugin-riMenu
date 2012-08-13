@@ -1,0 +1,35 @@
+types:
+  Category: 1
+  Product: 2
+  EzPage: 6
+  Manufacturer: 3
+  Page: 4
+  Custom: 5
+  
+routes:
+  admin_menu:
+    pattern:  /admin_menu/
+    defaults: { _controller: plugins\riMenu\AdminMenuController::indexAction }
+  admin_menu_edit:
+    pattern:  /admin_menu_edit/
+    defaults: { _controller: plugins\riMenu\AdminMenuController::editAction }  
+  admin_menu_delete:
+    pattern:  /admin_menu_delete/
+    defaults: { _controller: plugins\riMenu\AdminMenuController::deleteAction }      
+  admin_menu_search:
+    pattern:  /admin_menu_search/
+    defaults: { _controller: plugins\riMenu\AdminMenuController::searchAction }
+  renderNewAction:
+    pattern:  /admin_new_action/
+    defaults: { _controller: plugins\riMenu\AdminMenuController::renderNewAction } 
+  subMenu:
+    pattern:  /admin_sub_menu/
+    defaults: { _controller: plugins\riMenu\AdminMenuController::subMenu } 
+  ajax_show_sub_menu:
+    pattern:  /ajax_show_sub_menu/
+    defaults: { _controller: plugins\riMenu\AdminMenuController::ajaxShowSubMenu }
+global:    
+  backend:
+    menu:
+      extras:
+        - {text: Menu Manager, link: ri.php/admin_menu/}

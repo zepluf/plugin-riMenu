@@ -209,8 +209,8 @@ jQuery(document).ready(function(){
 						<td>
 							<div style="margin-left: <?php echo $menu['level'] * 10?>px;">
 								<?php echo zen_draw_input_field('menu['.$counter.'][menus_name]',$menu['menus_name'],'class="menus_name"');?>
-								<span class="menu-icon add"></span>
-								<span class="menu-icon remove"></span>
+								<span class="menu-icon add"><?php echo zen_image_button('add.png');?> </span>
+								<span class="menu-icon remove"><?php echo zen_image_button('remove.png');?> </span>
 							</div>
 						</td>
 						<td><?php echo zen_draw_hidden_field('menu['.$counter.'][menus_id]', $menu['menus_id'], 'class="menus_id"');?>

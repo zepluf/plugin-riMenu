@@ -19,7 +19,7 @@ class Tree {
 	var $is_attached = false;
 	
 	function __construct(){
-		if(count($this->menu_tree) == 0){
+		if(SCT_REBUILD_TREE != 'false' || count($this->menu_tree) == 0){
 			global $languages_id, $db;
 			$menus_query = "select *
 	                      from " . TABLE_MENUS . " c, " . TABLE_MENUS_DESCRIPTION . " cd

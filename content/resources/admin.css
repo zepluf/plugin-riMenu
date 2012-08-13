@@ -143,15 +143,3 @@ margin: 0 5px;
 .linkto {
 	float:left;
 }
-
-.add{
-    background: url('add.png') no-repeat;
-    width: 16px;
-    height: 16px;
-}
-
-.remove{
-    background: url('remove.png') no-repeat;
-    width: 16px;
-    height: 16px;
-}

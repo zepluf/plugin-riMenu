@@ -15,23 +15,6 @@ class AdminMenuController extends Controller{
         $this->view->get('holder')->add('main', $this->view->render('riMenu::backend/_menu_list.php', array('menus' => $menus_tree[0]['sub_menus'], 'menus_tree' => $menus_tree)));
         return $this->render('riMenu::admin_layout.php');
     }
-    
-    public function ajaxShowSubMenu(Request $request){
-        $check = 1;
-        $menuId = $request->get('menuId');
-        $menus_tree = Plugin::get('riMenu.Tree')->getTree();
-        if(count($menus_tree[$menuId]['sub_menus']) > 0){
-            foreach ($menus_tree[$menuId]['sub_menus'] as $submenuId){
-                $submenu[] = $menus_tree[$submenuId]['menus_id'];
-            }
-        }else{
-            $check = 0;
-        }
-        return new Response(json_encode(array(
-           'html'=>$this->view->render('riMenu::pupup_submenu.php',array('submenu'=>$submenu)),
-           'check'=>$check
-        )));
-    }
 
     public function editAction(Request $request){
         global $db,$messageStack;

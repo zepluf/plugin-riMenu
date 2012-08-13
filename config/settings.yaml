@@ -22,12 +22,7 @@ routes:
   renderNewAction:
     pattern:  /admin_new_action/
     defaults: { _controller: plugins\riMenu\AdminMenuController::renderNewAction } 
-  subMenu:
-    pattern:  /admin_sub_menu/
-    defaults: { _controller: plugins\riMenu\AdminMenuController::subMenu } 
-  ajax_show_sub_menu:
-    pattern:  /ajax_show_sub_menu/
-    defaults: { _controller: plugins\riMenu\AdminMenuController::ajaxShowSubMenu }
+
 global:    
   backend:
     menu:

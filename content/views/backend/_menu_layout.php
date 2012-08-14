@@ -12,8 +12,8 @@ $_SESSION['parent'] ? $_SESSION['parent'] = $_SESSION['parent'] + 1 : $_SESSION[
 
 <div class="content_content">
 	<div class="box_first"><?php echo zen_draw_input_field('menu[$parent_id][name]','','class="menu_url"');?>
-        <span class="add"><?php echo plugins\riPlugin\Plugin::get('riImage.Image')->find('riCjLoader::add.png');?></span>
-        <span class="remove"><?php echo plugins\riPlugin\Plugin::get('riImage.Image')->find('riCjLoader::remove.png');?></span>
+        <span class="add"><?php echo riImage('riMenu::add.png');?></span>
+        <span class="remove"><?php echo riImage('riMenu::remove.png');?></span>
     </div>
 	<div class="box_second" style="float:right;">	
 	<?php echo zen_draw_hidden_field('menu['.$parent_id.'][parent]', $parent_id, 'class="menu_parent"');?>
@@ -33,7 +33,7 @@ $_SESSION['parent'] ? $_SESSION['parent'] = $_SESSION['parent'] + 1 : $_SESSION[
 <td>Extra fields</td>
 </tr>
 <tr>
-<td><?php echo zen_draw_input_field('menu['.$parent_id.'][name]','','class="menu_url"');?><span class="add"><?php echo zen_image_button('add.png');?></span></td>
+<td><?php echo zen_draw_input_field('menu['.$parent_id.'][name]','','class="menu_url"');?><span class="add"><?php echo riImage('riMenu::add.png');?></span></td>
 <td><?php echo zen_draw_pull_down_menu('menu['.$parent_id.'][linkto]', $menu_down, '', 'class="menu_type"');?><?php echo zen_draw_input_field('menu[$parent_id][url]','','class="menu_url"');?></td>
 <td><?php echo zen_draw_input_field('menu['.$parent_id.'][sort_order]','', 'class="menu_sort_order"');?></td>
 </tr>

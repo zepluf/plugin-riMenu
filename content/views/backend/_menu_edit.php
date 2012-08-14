@@ -135,10 +135,12 @@ jQuery(document).ready(function(){
 	<tr data-id="-1" data-array-id="{{:array_id}}" data-level="{{:level}}" class="level_{{:level}}">
 		<td><div style="margin-left: {{:level * 10}}px;"><input type="text"
 				class="required menus_name" value="" name="menu[{{:array_id}}][menus_name]"><span
-				class="menu-icon add"><img border="0" alt=""
-					src="includes/languages/english/images/buttons/add.png"> </span><span
-				class="menu-icon remove"><img border="0" alt=""
-					src="includes/languages/english/images/buttons/remove.png"> </span>
+				class="menu-icon add">
+                    <?php echo riImage('riMenu::add.png');?>
+				</span>
+                <span class="menu-icon remove">
+                    <?php echo riImage('riMenu::remove.png');?>
+                </span>
 		</div>
 		</td>
 		<td><input type="hidden" class="menus_id" value="0"
@@ -209,8 +211,8 @@ jQuery(document).ready(function(){
 						<td>
 							<div style="margin-left: <?php echo $menu['level'] * 10?>px;">
 								<?php echo zen_draw_input_field('menu['.$counter.'][menus_name]',$menu['menus_name'],'class="menus_name"');?>
-								<span class="menu-icon add"><?php echo zen_image_button('add.png');?> </span>
-								<span class="menu-icon remove"><?php echo zen_image_button('remove.png');?> </span>
+								<span class="menu-icon add"><?php echo riImage('riMenu::add.png');?></span>
+								<span class="menu-icon remove"><?php echo riImage('riMenu::remove.png');?> </span>
 							</div>
 						</td>
 						<td><?php echo zen_draw_hidden_field('menu['.$counter.'][menus_id]', $menu['menus_id'], 'class="menus_id"');?>

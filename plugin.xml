@@ -33,6 +33,10 @@
                <codename>riCategory</codename>
                <min>1.0</min>
             </plugin>
+            <plugin>
+               <codename>riImage</codename>
+               <min>1.0</min>
+            </plugin>
    		</plugins>
 	</dependencies>
 	<changelog>
